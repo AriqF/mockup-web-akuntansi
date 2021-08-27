@@ -1,0 +1,12 @@
+.card-income{
+    border-left: 0.25rem solid #32CCBC !important;
+}
+.card-outcome{
+    border-left: 0.25rem solid #D939CD !important;
+}
+.card-balance{
+    border-left: 0.25rem solid #9708CC !important;
+}
+.card-debt{
+    border-left: 0.25rem solid #EA5455 !important;
+}
