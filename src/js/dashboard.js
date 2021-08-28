@@ -12,23 +12,22 @@
       type: 'line',
       data: {
         labels: [
-          'Sunday',
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday'
+          'Q1',
+          'Q2',
+          'Q3',
+          '2020 Q4',
+          '2021 Q1'
+    
         ],
         datasets: [{
           data: [
-            15339,
-            21345,
-            18483,
-            24003,
-            23489,
-            24092,
-            12034
+            91.08,
+            182.14,
+            -180.36,
+            -42.03,
+            5539.17,
+            5590.05
+
           ],
           lineTension: 0,
           backgroundColor: 'transparent',
