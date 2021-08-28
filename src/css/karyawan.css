@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+table{
+    font-family: 'Maven Pro', sans-serif;
+}
+thead{
+    font-size: 16px;
+    font-weight: 600;
+}
+tbody{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.user-edit{
+    font-size: 20px;
+}
+.menu-set-edit, .menu-set-del{
+    color: #000;
+    cursor: pointer;
+}
+
+.menu-set-edit{
+    color: #FFB830;
+}
+.menu-set-del{
+    color: #FF2442;
+}
+.menu-set-edit:hover{
+    color: #F0A310;
+}
+.menu-set-del:hover{
+    color: #EA0927;
+}
