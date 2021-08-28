@@ -50,13 +50,30 @@
             <div class="position-sticky pt-3">
                 <div class="container text-center" style="margin-bottom: 36px; margin-top: 24px;">
                     <p style="font-size: 18px; margin-bottom: 8px;">Selamat Datang, </p>
-                    <h2>Username</h2>
+                    <h2><a class="dropdown-toggle user-dropdown" data-bs-toggle="collapse" role="button" data-bs-target="#user-dropdown-menu" aria-expanded="false">Username</a></h2>
+                    <div class="collapse" id="user-dropdown-menu">
+                        <div class="bg-dark" id="user-menu">
+                            <ul class="nav flex-column ">
+                                <li class="nav-item dropdown-collapse">
+                                  <a class="nav-link" aria-current="page" href="#">Profil</a>
+                                </li>
+                                <li class="nav-item dropdown-collapse">
+                                  <a class="nav-link " href="#">Pengaturan</a>
+                                </li>
+                                <li class="nav-item dropdown-collapse">
+                                  <a class="nav-link" href="#">Keluar</a>
+                                </li>
+
+                              </ul>
+                        </div>
+
+                    </div>
                     <hr style="width:50%; margin-left:25% !important; margin-right:25% !important;">
                 </div>
                 
                 <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" href="#">
                     <i class="fas fa-tachometer-alt"></i>
                     Dashboard
                     </a>
@@ -68,7 +85,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="karyawan.html">
                     <i class="fas fa-users"></i>
                     Karyawan
                     </a>
@@ -111,6 +128,7 @@
             <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
             <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
                 <h1 class="h2">Dashboard</h1>
+                
 
             </div>
             <div class="row">
@@ -183,15 +201,18 @@
                 </div>
             </div>
             
-
-            <canvas class="my-4 w-100" id="myChart" width="900" height="260"></canvas>
+            <div class="container" id="chartBox">
+                <h4 class="text-left">Net Income Growth QoQ (%)</h4>
+               <canvas class="my-4 w-100" id="myChart" width="900" height="260"></canvas> 
+            </div>
+            
             <div class="row">
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-                    <h4>Total Penjualan</h4>
+                    <h4>Total Pendapatan</h4>
                     <canvas class="my-4 w-100" id="chartX" width="450" height="260"></canvas>
                 </div>
                 <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 text-center">
-                    <h4>Product Terjual</h4>
+                    <h4>Produk Terjual</h4>
                     <canvas class="my-4 w-100" id="chartY" width="450" height="260"></canvas>
                 </div>
             </div>
